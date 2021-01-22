@@ -7,14 +7,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Miki Media Player.exe.manifest" size="8114">
+    <dependentAssembly dependencyType="install" codebase="Miki Media Player.exe.manifest" size="8495">
       <assemblyIdentity name="Miki Media Player.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>KupkFfjuxXuzqcXgZp/PjOkFf9LJ2Z1RUyvOzig27nE=</dsig:DigestValue>
+        <dsig:DigestValue>+72OHI8/PcT7/TF8Wf2tqoTrcUYs9QwKwx7xQkuCASQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

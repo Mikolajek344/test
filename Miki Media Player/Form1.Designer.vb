@@ -31,6 +31,7 @@ Partial Class Form1
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.TrackBar2 = New System.Windows.Forms.TrackBar()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
@@ -40,7 +41,6 @@ Partial Class Form1
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.wmp = New AxWMPLib.AxWindowsMediaPlayer()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,6 +51,7 @@ Partial Class Form1
         'MenuStrip1
         '
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.MenuStrip1.GripMargin = New System.Windows.Forms.Padding(2, 2, 0, 2)
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(28, 28)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OtwórzToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
@@ -64,7 +65,7 @@ Partial Class Form1
         '
         Me.OtwórzToolStripMenuItem.Image = CType(resources.GetObject("OtwórzToolStripMenuItem.Image"), System.Drawing.Image)
         Me.OtwórzToolStripMenuItem.Name = "OtwórzToolStripMenuItem"
-        Me.OtwórzToolStripMenuItem.Size = New System.Drawing.Size(135, 34)
+        Me.OtwórzToolStripMenuItem.Size = New System.Drawing.Size(141, 34)
         Me.OtwórzToolStripMenuItem.Text = "Otwórz..."
         '
         'OpenFileDialog1
@@ -75,7 +76,7 @@ Partial Class Form1
         '
         Me.TrackBar1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TrackBar1.Location = New System.Drawing.Point(1095, 102)
-        Me.TrackBar1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.TrackBar1.Margin = New System.Windows.Forms.Padding(6)
         Me.TrackBar1.Maximum = 100
         Me.TrackBar1.Name = "TrackBar1"
         Me.TrackBar1.Size = New System.Drawing.Size(341, 80)
@@ -92,11 +93,11 @@ Partial Class Form1
         Me.TrackBar2.BackColor = System.Drawing.Color.DarkCyan
         Me.TrackBar2.LargeChange = 1
         Me.TrackBar2.Location = New System.Drawing.Point(0, 0)
-        Me.TrackBar2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.TrackBar2.Margin = New System.Windows.Forms.Padding(6)
         Me.TrackBar2.Maximum = 0
         Me.TrackBar2.MaximumSize = New System.Drawing.Size(3667, 83)
         Me.TrackBar2.Name = "TrackBar2"
-        Me.TrackBar2.Size = New System.Drawing.Size(1207, 80)
+        Me.TrackBar2.Size = New System.Drawing.Size(1297, 80)
         Me.TrackBar2.TabIndex = 12
         Me.TrackBar2.TickStyle = System.Windows.Forms.TickStyle.None
         '
@@ -117,17 +118,27 @@ Partial Class Form1
         Me.Panel1.Controls.Add(Me.Button5)
         Me.Panel1.Controls.Add(Me.Button3)
         Me.Panel1.Location = New System.Drawing.Point(0, 720)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(6)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1436, 194)
         Me.Panel1.TabIndex = 13
+        '
+        'Label1
+        '
+        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(1306, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(118, 25)
+        Me.Label1.TabIndex = 19
+        Me.Label1.Text = "00:00/00:00"
         '
         'Button8
         '
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button8.Image = CType(resources.GetObject("Button8.Image"), System.Drawing.Image)
-        Me.Button8.Location = New System.Drawing.Point(348, 102)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Button8.Location = New System.Drawing.Point(349, 102)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(6)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(73, 74)
         Me.Button8.TabIndex = 18
@@ -138,7 +149,7 @@ Partial Class Form1
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.Image = Global.Miki_Media_Player.My.Resources.Resources.icons8_rewind_30
         Me.Button7.Location = New System.Drawing.Point(95, 102)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(6)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(73, 74)
         Me.Button7.TabIndex = 15
@@ -149,7 +160,7 @@ Partial Class Form1
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Image = Global.Miki_Media_Player.My.Resources.Resources.icons8_fast_forward_30
         Me.Button6.Location = New System.Drawing.Point(264, 102)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(6)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(73, 74)
         Me.Button6.TabIndex = 14
@@ -161,7 +172,7 @@ Partial Class Form1
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Image = Global.Miki_Media_Player.My.Resources.Resources.icons8_sound_30
         Me.Button1.Location = New System.Drawing.Point(1010, 102)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(6)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(73, 74)
         Me.Button1.TabIndex = 13
@@ -173,7 +184,7 @@ Partial Class Form1
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Image = Global.Miki_Media_Player.My.Resources.Resources.icons8_mute_30
         Me.Button4.Location = New System.Drawing.Point(1010, 102)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(6)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(73, 74)
         Me.Button4.TabIndex = 8
@@ -185,7 +196,7 @@ Partial Class Form1
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Image = Global.Miki_Media_Player.My.Resources.Resources.icons8_pause_30
         Me.Button2.Location = New System.Drawing.Point(11, 102)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(6)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(73, 74)
         Me.Button2.TabIndex = 6
@@ -197,7 +208,7 @@ Partial Class Form1
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Image = Global.Miki_Media_Player.My.Resources.Resources.icons8_stop_30
         Me.Button5.Location = New System.Drawing.Point(180, 102)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(6)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(73, 74)
         Me.Button5.TabIndex = 9
@@ -209,7 +220,7 @@ Partial Class Form1
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Image = Global.Miki_Media_Player.My.Resources.Resources.icons8_play_30
         Me.Button3.Location = New System.Drawing.Point(11, 102)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(6)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(73, 74)
         Me.Button3.TabIndex = 7
@@ -222,20 +233,11 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.wmp.Enabled = True
         Me.wmp.Location = New System.Drawing.Point(0, 48)
-        Me.wmp.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.wmp.Margin = New System.Windows.Forms.Padding(6)
         Me.wmp.Name = "wmp"
         Me.wmp.OcxState = CType(resources.GetObject("wmp.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.wmp.Size = New System.Drawing.Size(1436, 719)
+        Me.wmp.Size = New System.Drawing.Size(1436, 717)
         Me.wmp.TabIndex = 11
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(1217, 4)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(118, 25)
-        Me.Label1.TabIndex = 19
-        Me.Label1.Text = "00:00/00:00"
         '
         'Form1
         '
@@ -248,7 +250,7 @@ Partial Class Form1
         Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "Form1"
         Me.Text = "Miki Media Player"
         Me.MenuStrip1.ResumeLayout(False)

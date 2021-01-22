@@ -8,7 +8,7 @@ Public Class Form1
     End Sub
 
     Private Sub AxWindowsMediaPlayer1_Enter(sender As Object, e As EventArgs)
-
+        Me.BackColor = Color.Red
     End Sub
 
     Private Sub AxWindowsMediaPlayer_Enter(sender As Object, e As EventArgs)

@@ -34,10 +34,12 @@ C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Mik
 C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.exe
 C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.xml
 C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.pdb
-C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.vbprojResolveAssemblyReference.cache
 C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki_Media_Player.Form1.resources
 C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki_Media_Player.Resources.resources
 C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.vbproj.GenerateResource.Cache
 C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.TrustInfo.xml
 C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.exe.manifest
 C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.application
+C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.vbprojAssemblyReference.cache
+C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.vbproj.CoreCompileInputs.cache
+C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.vbproj.CopyComplete

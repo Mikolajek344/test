@@ -2,74 +2,89 @@
 <doc>
 <assembly>
 <name>
-MikiMediaPlayer
+Miki Media Player
 </name>
 </assembly>
 <members>
+<member name="T:Miki_Media_Player.My.Resources.Resources">
+<summary>
+  Klasa zasobu wymagająca zdefiniowania typu do wyszukiwania zlokalizowanych ciągów itd.
+</summary>
+</member>
 <member name="P:Miki_Media_Player.My.Resources.Resources.ResourceManager">
-	<summary>
+<summary>
 Zwraca buforowane wystąpienie ResourceManager używane przez tę klasę.
 </summary>
-</member><member name="P:Miki_Media_Player.My.Resources.Resources.Culture">
-	<summary>
+</member>
+<member name="P:Miki_Media_Player.My.Resources.Resources.Culture">
+<summary>
   Przesłania właściwość CurrentUICulture bieżącego wątku dla wszystkich
   przypadków przeszukiwania zasobów za pomocą tej klasy zasobów wymagającej zdefiniowania typu.
 </summary>
-</member><member name="P:Miki_Media_Player.My.Resources.Resources.icons8_fast_forward_30">
-	<summary>
+</member>
+<member name="P:Miki_Media_Player.My.Resources.Resources.icons8_fast_forward_30">
+<summary>
   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Miki_Media_Player.My.Resources.Resources.icons8_mute_20">
-	<summary>
+</member>
+<member name="P:Miki_Media_Player.My.Resources.Resources.icons8_mute_20">
+<summary>
   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Miki_Media_Player.My.Resources.Resources.icons8_mute_30">
-	<summary>
+</member>
+<member name="P:Miki_Media_Player.My.Resources.Resources.icons8_mute_30">
+<summary>
   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Miki_Media_Player.My.Resources.Resources.icons8_mute_30__1_">
-	<summary>
+</member>
+<member name="P:Miki_Media_Player.My.Resources.Resources.icons8_mute_30__1_">
+<summary>
   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Miki_Media_Player.My.Resources.Resources.icons8_pause_30">
-	<summary>
+</member>
+<member name="P:Miki_Media_Player.My.Resources.Resources.icons8_pause_30">
+<summary>
   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Miki_Media_Player.My.Resources.Resources.icons8_play_30">
-	<summary>
+</member>
+<member name="P:Miki_Media_Player.My.Resources.Resources.icons8_play_30">
+<summary>
   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Miki_Media_Player.My.Resources.Resources.icons8_play_64">
-	<summary>
+</member>
+<member name="P:Miki_Media_Player.My.Resources.Resources.icons8_play_64">
+<summary>
   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Miki_Media_Player.My.Resources.Resources.icons8_rewind_30">
-	<summary>
+</member>
+<member name="P:Miki_Media_Player.My.Resources.Resources.icons8_rewind_30">
+<summary>
   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Miki_Media_Player.My.Resources.Resources.icons8_sound_20">
-	<summary>
+</member>
+<member name="P:Miki_Media_Player.My.Resources.Resources.icons8_sound_20">
+<summary>
   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Miki_Media_Player.My.Resources.Resources.icons8_sound_30">
-	<summary>
+</member>
+<member name="P:Miki_Media_Player.My.Resources.Resources.icons8_sound_30">
+<summary>
   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Miki_Media_Player.My.Resources.Resources.icons8_sound_30__1_">
-	<summary>
+</member>
+<member name="P:Miki_Media_Player.My.Resources.Resources.icons8_sound_30__1_">
+<summary>
   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Miki_Media_Player.My.Resources.Resources.icons8_stop_15">
-	<summary>
+</member>
+<member name="P:Miki_Media_Player.My.Resources.Resources.icons8_stop_15">
+<summary>
   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Miki_Media_Player.My.Resources.Resources.icons8_stop_30">
-	<summary>
+</member>
+<member name="P:Miki_Media_Player.My.Resources.Resources.icons8_stop_30">
+<summary>
   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
-</summary>
-</member><member name="T:Miki_Media_Player.My.Resources.Resources">
-	<summary>
-  Klasa zasobu wymagająca zdefiniowania typu do wyszukiwania zlokalizowanych ciągów itd.
 </summary>
 </member>
 </members>
