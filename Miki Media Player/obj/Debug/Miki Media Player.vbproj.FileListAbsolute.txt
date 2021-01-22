@@ -1,0 +1,43 @@
+C:\Users\user\source\repos\Miki Media Player\Miki Media Player\bin\Debug\Miki Media Player.exe.config
+C:\Users\user\source\repos\Miki Media Player\Miki Media Player\bin\Debug\Miki Media Player.exe
+C:\Users\user\source\repos\Miki Media Player\Miki Media Player\bin\Debug\Miki Media Player.pdb
+C:\Users\user\source\repos\Miki Media Player\Miki Media Player\bin\Debug\Miki Media Player.xml
+C:\Users\user\source\repos\Miki Media Player\Miki Media Player\bin\Debug\Interop.WMPLib.dll
+C:\Users\user\source\repos\Miki Media Player\Miki Media Player\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\user\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.vbprojAssemblyReference.cache
+C:\Users\user\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Interop.WMPLib.dll
+C:\Users\user\source\repos\Miki Media Player\Miki Media Player\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\user\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.vbproj.ResolveComReference.cache
+C:\Users\user\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki_Media_Player.Form1.resources
+C:\Users\user\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki_Media_Player.Resources.resources
+C:\Users\user\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.vbproj.GenerateResource.cache
+C:\Users\user\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.exe
+C:\Users\user\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.xml
+C:\Users\user\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.pdb
+D:\sjkasjak\Miki Media Player.exe.config
+D:\sjkasjak\Miki Media Player.exe
+D:\sjkasjak\Miki Media Player.pdb
+D:\sjkasjak\Miki Media Player.xml
+C:\Users\user\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.vbproj.CopyComplete
+D:\Miki Media Player\Miki Media Player.exe.config
+D:\Miki Media Player\Miki Media Player.exe
+D:\Miki Media Player\Miki Media Player.pdb
+D:\Miki Media Player\Miki Media Player.xml
+D:\Miki Media Player\Miki Media Player.exe.manifest
+D:\Miki Media Player\Miki Media Player.application
+C:\Users\user\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.TrustInfo.xml
+C:\Users\user\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.exe.manifest
+C:\Users\user\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.application
+C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Interop.WMPLib.dll
+C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.vbproj.ResolveComReference.cache
+C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.exe
+C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.xml
+C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.pdb
+C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.vbprojResolveAssemblyReference.cache
+C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki_Media_Player.Form1.resources
+C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki_Media_Player.Resources.resources
+C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.vbproj.GenerateResource.Cache
+C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.TrustInfo.xml
+C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.exe.manifest
+C:\Users\Mikołaj\source\repos\Miki Media Player\Miki Media Player\obj\Debug\Miki Media Player.application
