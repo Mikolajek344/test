@@ -159,7 +159,7 @@ Partial Class Form1
         '
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Image = Global.Miki_Media_Player.My.Resources.Resources.icons8_fast_forward_30
-        Me.Button6.Location = New System.Drawing.Point(264, 102)
+        Me.Button6.Location = New System.Drawing.Point(612, 80)
         Me.Button6.Margin = New System.Windows.Forms.Padding(6)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(73, 74)
