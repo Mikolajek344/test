@@ -8,7 +8,7 @@ Public Class Form1
     End Sub
 
     Private Sub AxWindowsMediaPlayer1_Enter(sender As Object, e As EventArgs)
-        Me.Close()
+
     End Sub
 
     Private Sub AxWindowsMediaPlayer_Enter(sender As Object, e As EventArgs)
@@ -105,7 +105,7 @@ Public Class Form1
         wmp.Ctlcontrols.fastReverse()
     End Sub
 
-    Private Sub TwórcaToolStripMenuItem_Click(sender As Object, e As EventArgs) 
+    Private Sub TwórcaToolStripMenuItem_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -137,7 +137,7 @@ Public Class Form1
 
     End Sub
 
-    Private Sub Button8_Click_1(sender As Object, e As EventArgs) 
+    Private Sub Button8_Click_1(sender As Object, e As EventArgs)
 
     End Sub
 
