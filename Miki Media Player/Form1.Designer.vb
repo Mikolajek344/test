@@ -137,7 +137,7 @@ Partial Class Form1
         '
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button8.Image = CType(resources.GetObject("Button8.Image"), System.Drawing.Image)
-        Me.Button8.Location = New System.Drawing.Point(349, 102)
+        Me.Button8.Location = New System.Drawing.Point(349, 38)
         Me.Button8.Margin = New System.Windows.Forms.Padding(6)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(73, 74)
