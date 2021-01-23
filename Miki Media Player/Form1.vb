@@ -4,6 +4,7 @@ Public Class Form1
     Private Sub OtwórzToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OtwórzToolStripMenuItem.Click
         If OpenFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
             wmp.URL = OpenFileDialog1.FileName
+            Label2.Text = wmp.currentMedia.name
         End If
     End Sub
 
@@ -37,6 +38,15 @@ Public Class Form1
 
     Private Sub TrackBar1_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
         wmp.settings.volume = TrackBar1.Value
+        If TrackBar1.Value = "0" Then
+            wmp.settings.volume = 0
+            Button4.Show()
+            Button1.Hide()
+        Else
+            wmp.settings.volume = TrackBar1.Value
+            Button1.Show()
+            Button4.Hide()
+        End If
     End Sub
 
 
@@ -82,6 +92,7 @@ Public Class Form1
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        TrackBar1.Value = 30 Or 50
         wmp.settings.volume = TrackBar1.Value
         Button1.Show()
         Button4.Hide()
@@ -93,6 +104,7 @@ Public Class Form1
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         wmp.settings.volume = 0
+        TrackBar1.Value = 0
         Button4.Show()
         Button1.Hide()
     End Sub
@@ -155,5 +167,9 @@ Public Class Form1
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
         Label1.Text = wmp.status()
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

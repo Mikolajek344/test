@@ -41,11 +41,14 @@ Partial Class Form1
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.wmp = New AxWMPLib.AxWindowsMediaPlayer()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.wmp, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -57,7 +60,7 @@ Partial Class Form1
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(11, 4, 0, 4)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1436, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1672, 42)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -75,7 +78,7 @@ Partial Class Form1
         'TrackBar1
         '
         Me.TrackBar1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TrackBar1.Location = New System.Drawing.Point(1095, 102)
+        Me.TrackBar1.Location = New System.Drawing.Point(1331, 107)
         Me.TrackBar1.Margin = New System.Windows.Forms.Padding(6)
         Me.TrackBar1.Maximum = 100
         Me.TrackBar1.Name = "TrackBar1"
@@ -92,12 +95,12 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TrackBar2.BackColor = System.Drawing.Color.DarkCyan
         Me.TrackBar2.LargeChange = 1
-        Me.TrackBar2.Location = New System.Drawing.Point(0, 0)
+        Me.TrackBar2.Location = New System.Drawing.Point(0, 5)
         Me.TrackBar2.Margin = New System.Windows.Forms.Padding(6)
         Me.TrackBar2.Maximum = 0
         Me.TrackBar2.MaximumSize = New System.Drawing.Size(3667, 83)
         Me.TrackBar2.Name = "TrackBar2"
-        Me.TrackBar2.Size = New System.Drawing.Size(1297, 80)
+        Me.TrackBar2.Size = New System.Drawing.Size(1544, 80)
         Me.TrackBar2.TabIndex = 12
         Me.TrackBar2.TickStyle = System.Windows.Forms.TickStyle.None
         '
@@ -106,6 +109,7 @@ Partial Class Form1
         Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel1.BackColor = System.Drawing.Color.DarkCyan
+        Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.Button8)
         Me.Panel1.Controls.Add(Me.Button7)
@@ -117,17 +121,17 @@ Partial Class Form1
         Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.Button5)
         Me.Panel1.Controls.Add(Me.Button3)
-        Me.Panel1.Location = New System.Drawing.Point(0, 720)
+        Me.Panel1.Location = New System.Drawing.Point(0, 859)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(6)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1436, 194)
+        Me.Panel1.Size = New System.Drawing.Size(1672, 199)
         Me.Panel1.TabIndex = 13
         '
         'Label1
         '
         Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(1306, 9)
+        Me.Label1.Location = New System.Drawing.Point(1542, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(118, 25)
         Me.Label1.TabIndex = 19
@@ -137,7 +141,7 @@ Partial Class Form1
         '
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button8.Image = CType(resources.GetObject("Button8.Image"), System.Drawing.Image)
-        Me.Button8.Location = New System.Drawing.Point(349, 38)
+        Me.Button8.Location = New System.Drawing.Point(350, 102)
         Me.Button8.Margin = New System.Windows.Forms.Padding(6)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(73, 74)
@@ -159,7 +163,7 @@ Partial Class Form1
         '
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Image = Global.Miki_Media_Player.My.Resources.Resources.icons8_fast_forward_30
-        Me.Button6.Location = New System.Drawing.Point(612, 80)
+        Me.Button6.Location = New System.Drawing.Point(265, 102)
         Me.Button6.Margin = New System.Windows.Forms.Padding(6)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(73, 74)
@@ -171,7 +175,7 @@ Partial Class Form1
         Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Image = Global.Miki_Media_Player.My.Resources.Resources.icons8_sound_30
-        Me.Button1.Location = New System.Drawing.Point(1010, 102)
+        Me.Button1.Location = New System.Drawing.Point(1246, 107)
         Me.Button1.Margin = New System.Windows.Forms.Padding(6)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(73, 74)
@@ -183,7 +187,7 @@ Partial Class Form1
         Me.Button4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Image = Global.Miki_Media_Player.My.Resources.Resources.icons8_mute_30
-        Me.Button4.Location = New System.Drawing.Point(1010, 102)
+        Me.Button4.Location = New System.Drawing.Point(1246, 107)
         Me.Button4.Margin = New System.Windows.Forms.Padding(6)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(73, 74)
@@ -195,7 +199,7 @@ Partial Class Form1
         Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Image = Global.Miki_Media_Player.My.Resources.Resources.icons8_pause_30
-        Me.Button2.Location = New System.Drawing.Point(11, 102)
+        Me.Button2.Location = New System.Drawing.Point(15, 102)
         Me.Button2.Margin = New System.Windows.Forms.Padding(6)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(73, 74)
@@ -219,7 +223,7 @@ Partial Class Form1
         Me.Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Image = Global.Miki_Media_Player.My.Resources.Resources.icons8_play_30
-        Me.Button3.Location = New System.Drawing.Point(11, 102)
+        Me.Button3.Location = New System.Drawing.Point(15, 102)
         Me.Button3.Margin = New System.Windows.Forms.Padding(6)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(73, 74)
@@ -228,26 +232,45 @@ Partial Class Form1
         '
         'wmp
         '
-        Me.wmp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.wmp.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.wmp.Enabled = True
-        Me.wmp.Location = New System.Drawing.Point(0, 48)
+        Me.wmp.Location = New System.Drawing.Point(131, 114)
         Me.wmp.Margin = New System.Windows.Forms.Padding(6)
         Me.wmp.Name = "wmp"
         Me.wmp.OcxState = CType(resources.GetObject("wmp.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.wmp.Size = New System.Drawing.Size(1436, 717)
+        Me.wmp.Size = New System.Drawing.Size(873, 645)
         Me.wmp.TabIndex = 11
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(291, 55)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(19, 25)
+        Me.Label2.TabIndex = 20
+        Me.Label2.Text = "-"
+        '
+        'Panel2
+        '
+        Me.Panel2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel2.BackColor = System.Drawing.SystemColors.Control
+        Me.Panel2.Controls.Add(Me.wmp)
+        Me.Panel2.Location = New System.Drawing.Point(0, 45)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(1672, 866)
+        Me.Panel2.TabIndex = 14
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 24.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(1436, 918)
+        Me.ClientSize = New System.Drawing.Size(1672, 1057)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.wmp)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Controls.Add(Me.Panel2)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Margin = New System.Windows.Forms.Padding(6)
@@ -260,6 +283,7 @@ Partial Class Form1
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.wmp, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -281,4 +305,6 @@ Partial Class Form1
     Friend WithEvents Button7 As Button
     Friend WithEvents Button8 As Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Panel2 As Panel
 End Class

@@ -67,14 +67,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Miki Media Player.exe" size="48624">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Miki Media Player.exe" size="49648">
       <assemblyIdentity name="Miki Media Player" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>RnrW2g7B2wlHokXM/SywQZ1deWJscKUNPxUPR7ozCxM=</dsig:DigestValue>
+        <dsig:DigestValue>FbYP5zAPVdu22VCadkCA4C1Sam8G9u0XCHSqGaRlWos=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
