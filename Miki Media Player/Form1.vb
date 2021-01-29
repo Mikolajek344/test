@@ -1,10 +1,23 @@
-﻿Imports AxWMPLib
+﻿Imports TagLib.Id3v2
+Imports AxWMPLib
+Imports System.IO
+
+
 
 Public Class Form1
     Private Sub OtwórzToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OtwórzToolStripMenuItem.Click
         If OpenFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
             wmp.URL = OpenFileDialog1.FileName
             Label2.Text = wmp.currentMedia.name
+            Timer1.Start()
+            PictureBox1.Show()
+            Dim file As TagLib.File = TagLib.File.Create(OpenFileDialog1.FileName.ToString)
+            If (file.Tag.Pictures.Length > 0) Then
+                Dim bin = CType(file.Tag.Pictures(0).Data.Data, Byte())
+                PictureBox1.Image = Image.FromStream(New MemoryStream(bin)).GetThumbnailImage(600, 600, Nothing, IntPtr.Zero)
+            Else
+                PictureBox1.Hide()
+            End If
         End If
     End Sub
 
@@ -51,44 +64,33 @@ Public Class Form1
 
 
 
-    Private Sub wmp_PlayStateChange(sender As Object, e As _WMPOCXEvents_PlayStateChangeEvent) Handles wmp.PlayStateChange
-        If Me.wmp.playState = WMPLib.WMPPlayState.wmppsBuffering Or Me.wmp.playState = WMPLib.WMPPlayState.wmppsPlaying Then
-
-            ' set trackbar1 min and maximum values
-
-            Me.TrackBar2.Minimum = 0
-
-            Me.TrackBar2.Maximum = Me.wmp.currentMedia.duration
-
-            Me.Timer1.Start()
-
+    Private Sub wmp_PlayStateChange(sender As Object, e As _WMPOCXEvents_PlayStateChangeEvent)
+        If Me.wmp.playState = WMPLib.WMPPlayState.wmppsPlaying Then
+            Timer1.Start()
         ElseIf Me.wmp.playState = WMPLib.WMPPlayState.wmppsMediaEnded Or Me.wmp.playState = WMPLib.WMPPlayState.wmppsStopped Then
-
             Me.TrackBar2.Value = 0
-
             Me.Timer1.Stop()
-
+        End If
+        If wmp.windowlessVideo = True Then
+            wmp.uiMode = "none"
         End If
     End Sub
 
-    Private Sub wmp_Enter(sender As Object, e As EventArgs) Handles wmp.Enter
+    Private Sub wmp_Enter(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub TrackBar2_Scroll(sender As Object, e As EventArgs) Handles TrackBar2.Scroll
+    Private Sub TrackBar2_Scroll(sender As Object, e As EventArgs)
 
         Me.wmp.Ctlcontrols.currentPosition = Me.TrackBar2.Value
 
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        'adjust trackbar2 value for current media position
-        If wmp.playState = WMPLib.WMPPlayState.wmppsPlaying Then
-
-            TrackBar2.Value = wmp.Ctlcontrols.currentPosition
-
-        End If
-
+        Dim Cur As Integer = wmp.Ctlcontrols.currentPosition
+        Dim Len As Integer = wmp.currentMedia.duration
+        TrackBar2.Value = Cur
+        TrackBar2.Maximum = wmp.currentMedia.duration
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
@@ -162,6 +164,7 @@ Public Class Form1
     End Sub
 
     Private Sub Button8_Click_4(sender As Object, e As EventArgs) Handles Button8.Click
+        wmp.uiMode = "full"
         wmp.fullScreen = True
     End Sub
 
@@ -170,6 +173,14 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub wmp_SwitchedToControl(sender As Object, e As EventArgs) Handles wmp.SwitchedToControl
+
+    End Sub
+
+    Private Sub wmp_Resize(sender As Object, e As EventArgs) Handles wmp.Resize
 
     End Sub
 End Class

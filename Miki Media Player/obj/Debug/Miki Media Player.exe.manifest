@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
   <asmv1:assemblyIdentity name="Miki Media Player.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
-  <description asmv2:iconFile="bez__tytu__u_z3Y_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
     <assemblyIdentity name="Miki Media Player" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -50,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>vv80S95qseMa/dBKspil4ShB+lkGKwLNGDthbyNbAKg=</dsig:DigestValue>
+        <dsig:DigestValue>y6FNLL2gS9bpr/DVMr0Lyh4pTO38sGVixIoQ6xo1BT8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,19 +61,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ajO08Q1YmVWClltCKqug4t0vDxpoB3YKgC2RfF2qq3U=</dsig:DigestValue>
+        <dsig:DigestValue>7uiK9hCliuMD687NDUET2Z4xW67gwyOV62H+c52W6UM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Miki Media Player.exe" size="49648">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Miki Media Player.exe" size="44544">
       <assemblyIdentity name="Miki Media Player" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FbYP5zAPVdu22VCadkCA4C1Sam8G9u0XCHSqGaRlWos=</dsig:DigestValue>
+        <dsig:DigestValue>CLDwxC2vStzS8pOxg2YzSqaJ9Kt8Dl5ZdiPPBiqUceA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -87,6 +86,18 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>Ouzm0K9q/PuxFbEXz1MJ4QtZWgT6EWx0MjU87NAXNgM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="taglib-sharp.dll" size="435200">
+      <assemblyIdentity name="taglib-sharp" version="2.0.4.0" publicKeyToken="DB62EBA44689B5B0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>7GoAUFVuHC2uUcyskYDVWWU92lP3+bgc1Nyxc+dSXaw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -114,15 +125,6 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="bez__tytu__u_z3Y_icon.ico" size="4286">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>CRTUA5vCSP4n76pKGxUCSdqrhxeyyiEwa1FUIAjOVlM=</dsig:DigestValue>
-    </hash>
-  </file>
   <file name="Miki Media Player.exe.config" size="188">
     <hash>
       <dsig:Transforms>

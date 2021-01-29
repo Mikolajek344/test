@@ -29,8 +29,9 @@ Partial Class Form1
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.TrackBar1 = New System.Windows.Forms.TrackBar()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.TrackBar2 = New System.Windows.Forms.TrackBar()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.TrackBar2 = New System.Windows.Forms.TrackBar()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
@@ -40,15 +41,14 @@ Partial Class Form1
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.wmp = New AxWMPLib.AxWindowsMediaPlayer()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
+        CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.wmp, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -73,7 +73,7 @@ Partial Class Form1
         '
         'OpenFileDialog1
         '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        Me.OpenFileDialog1.Filter = "Pliki multimedialne|*.mp4;*.wmv;*.mkv;*.mp3"
         '
         'TrackBar1
         '
@@ -84,54 +84,62 @@ Partial Class Form1
         Me.TrackBar1.Name = "TrackBar1"
         Me.TrackBar1.Size = New System.Drawing.Size(341, 80)
         Me.TrackBar1.TabIndex = 4
-        Me.TrackBar1.Value = 100
+        Me.TrackBar1.Value = 50
         '
         'Timer1
         '
-        '
-        'TrackBar2
-        '
-        Me.TrackBar2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TrackBar2.BackColor = System.Drawing.Color.DarkCyan
-        Me.TrackBar2.LargeChange = 1
-        Me.TrackBar2.Location = New System.Drawing.Point(0, 5)
-        Me.TrackBar2.Margin = New System.Windows.Forms.Padding(6)
-        Me.TrackBar2.Maximum = 0
-        Me.TrackBar2.MaximumSize = New System.Drawing.Size(3667, 83)
-        Me.TrackBar2.Name = "TrackBar2"
-        Me.TrackBar2.Size = New System.Drawing.Size(1544, 80)
-        Me.TrackBar2.TabIndex = 12
-        Me.TrackBar2.TickStyle = System.Windows.Forms.TickStyle.None
+        Me.Timer1.Interval = 500
         '
         'Panel1
         '
         Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel1.BackColor = System.Drawing.Color.DarkCyan
+        Me.Panel1.Controls.Add(Me.TrackBar2)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.Button8)
         Me.Panel1.Controls.Add(Me.Button7)
         Me.Panel1.Controls.Add(Me.Button6)
         Me.Panel1.Controls.Add(Me.TrackBar1)
-        Me.Panel1.Controls.Add(Me.TrackBar2)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.Button4)
         Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.Button5)
         Me.Panel1.Controls.Add(Me.Button3)
-        Me.Panel1.Location = New System.Drawing.Point(0, 859)
+        Me.Panel1.Location = New System.Drawing.Point(0, 858)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(6)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1672, 199)
         Me.Panel1.TabIndex = 13
+        '
+        'TrackBar2
+        '
+        Me.TrackBar2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TrackBar2.Location = New System.Drawing.Point(3, 3)
+        Me.TrackBar2.Maximum = 0
+        Me.TrackBar2.Name = "TrackBar2"
+        Me.TrackBar2.Size = New System.Drawing.Size(1532, 80)
+        Me.TrackBar2.TabIndex = 21
+        Me.TrackBar2.TickStyle = System.Windows.Forms.TickStyle.None
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(446, 132)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(19, 25)
+        Me.Label2.TabIndex = 20
+        Me.Label2.Text = "-"
         '
         'Label1
         '
         Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(1542, 9)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(118, 25)
         Me.Label1.TabIndex = 19
@@ -163,7 +171,7 @@ Partial Class Form1
         '
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Image = Global.Miki_Media_Player.My.Resources.Resources.icons8_fast_forward_30
-        Me.Button6.Location = New System.Drawing.Point(265, 102)
+        Me.Button6.Location = New System.Drawing.Point(266, 102)
         Me.Button6.Margin = New System.Windows.Forms.Padding(6)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(73, 74)
@@ -175,7 +183,7 @@ Partial Class Form1
         Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Image = Global.Miki_Media_Player.My.Resources.Resources.icons8_sound_30
-        Me.Button1.Location = New System.Drawing.Point(1246, 107)
+        Me.Button1.Location = New System.Drawing.Point(1247, 107)
         Me.Button1.Margin = New System.Windows.Forms.Padding(6)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(73, 74)
@@ -187,7 +195,7 @@ Partial Class Form1
         Me.Button4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Image = Global.Miki_Media_Player.My.Resources.Resources.icons8_mute_30
-        Me.Button4.Location = New System.Drawing.Point(1246, 107)
+        Me.Button4.Location = New System.Drawing.Point(1247, 107)
         Me.Button4.Margin = New System.Windows.Forms.Padding(6)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(73, 74)
@@ -230,47 +238,40 @@ Partial Class Form1
         Me.Button3.TabIndex = 7
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'wmp
+        'PictureBox1
         '
-        Me.wmp.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.wmp.Enabled = True
-        Me.wmp.Location = New System.Drawing.Point(131, 114)
-        Me.wmp.Margin = New System.Windows.Forms.Padding(6)
-        Me.wmp.Name = "wmp"
-        Me.wmp.OcxState = CType(resources.GetObject("wmp.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.wmp.Size = New System.Drawing.Size(873, 645)
-        Me.wmp.TabIndex = 11
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(291, 55)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(19, 25)
-        Me.Label2.TabIndex = 20
-        Me.Label2.Text = "-"
-        '
-        'Panel2
-        '
-        Me.Panel2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.PictureBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel2.BackColor = System.Drawing.SystemColors.Control
-        Me.Panel2.Controls.Add(Me.wmp)
-        Me.Panel2.Location = New System.Drawing.Point(0, 45)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1672, 866)
-        Me.Panel2.TabIndex = 14
+        Me.PictureBox1.Location = New System.Drawing.Point(423, 45)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(817, 817)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 15
+        Me.PictureBox1.TabStop = False
+        '
+        'wmp
+        '
+        Me.wmp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.wmp.Enabled = True
+        Me.wmp.Location = New System.Drawing.Point(0, 45)
+        Me.wmp.Name = "wmp"
+        Me.wmp.OcxState = CType(resources.GetObject("wmp.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.wmp.Size = New System.Drawing.Size(783, 414)
+        Me.wmp.TabIndex = 16
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 24.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(1672, 1057)
+        Me.ClientSize = New System.Drawing.Size(1672, 1058)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.wmp)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.Controls.Add(Me.Panel2)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Margin = New System.Windows.Forms.Padding(6)
@@ -279,11 +280,11 @@ Partial Class Form1
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.wmp, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -296,9 +297,7 @@ Partial Class Form1
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button3 As Button
-    Friend WithEvents wmp As AxWMPLib.AxWindowsMediaPlayer
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents TrackBar2 As TrackBar
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Button1 As Button
     Friend WithEvents Button6 As Button
@@ -306,5 +305,7 @@ Partial Class Form1
     Friend WithEvents Button8 As Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Panel2 As Panel
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents TrackBar2 As TrackBar
+    Friend WithEvents wmp As AxWMPLib.AxWindowsMediaPlayer
 End Class
